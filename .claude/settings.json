@@ -1,0 +1,17 @@
+{
+   "permissions": {
+      "ask": [
+         "Bash(git commit:*)",
+         "Bash(git push:*)",
+         "Bash(terraform apply:*)"
+      ],
+      "deny": [
+         "Bash(git push origin main:*)",
+         "Bash(git push --force:*)",
+         "Bash(terraform destroy:*)",
+         "Bash(terraform state:*)",
+         "Read(./.env*)",
+         "Read(./**/*.tfvars)"
+      ]
+   }
+}
